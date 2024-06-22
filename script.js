@@ -13,7 +13,7 @@ menuBtn.click(async function(){
     menuNav.toggleClass("-right-40 right-0 opacity-0");
     for(const child of menuAniPart.children){
         await new Promise(r => setTimeout(r, 50));
-        $(child).toggleClass("ml-7 ml-0 opacity-0");
+        $(child).toggleClass("ml-7 opacity-0");
     }
 })
 
@@ -23,6 +23,6 @@ $(window).resize(function() {
         menuBackground.addClass("opacity-0");
         body.removeClass("overflow-y-hidden");
         menuBtn.html("menu");
-        $(menuAniPart).children().removeClass("ml-0").addClass("ml-7 opacity-0");
+        $(menuAniPart).children().addClass("ml-7 opacity-0");
     }
 });
